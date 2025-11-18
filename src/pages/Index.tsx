@@ -47,6 +47,7 @@ const Index = () => {
     setChartType(data.chart_type);
     setChartData(data.chart_data);
     setTableData(data.table_data);
+    setSelectedLocation("")
   };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -74,6 +75,7 @@ const Index = () => {
 
   const downloadCSV = () => {
     if (!selectedLocation) {
+      alert("Please select a location before downloading the CSV.")
       return;
     }
     window.open(`https://realestate-backend-5hg5.onrender.com/api/download/?location=${selectedLocation}`);
