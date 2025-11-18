@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/YashReddy1963/realestate-frontend",
+  "homepage": "https://YashReddy1963.github.io/realestate-frontend",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
